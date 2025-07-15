@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    @media(max-width:768px) {
+        nav{
+            flex-direction: column;
+        }
+        
+    }
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(bacground.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    /* in lagu xaka meyo marka uu cabir ka badan yihin  */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+nav a{
+      font-weight: bold;
+      margin-left: 10px;
+}
+.logo{
+    width: 140px;
+      margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    /* dhaqaaqa yar ee buttonka */
+    transition: 0.5s;
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color: #222;
+    display: flex;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    font-family: sans-serif;
+    /* qoralka dhaqaaqiisa */
+    animation-delay: 0.5s;
+
+}
+.content .btn{
+    padding: 15px 55px;
+    font-size: 16px;
+    /* dhaqaaqa btnka join us */
+     animation-delay: 1s;
+}
+/* pseudo class */
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.feature-img{
+    width: 420px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+   margin-left: 190px;
+}
+.feature-img.anim{
+     animation-delay: 1.5s;
+
+}
+.anim{
+    opacity: 0;
+    /* it will move up */
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        /* in hoos u kaso kaco /qurxin  */
+        transform: translateY(0px);
+
+    }
+}
+
+
+/* about */
+
+nav{
+    padding: 10px 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+nav a{
+      font-weight: bold;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    color: #bd0101;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.container{
+     text-align: center;
+     font-size: large;
+     font-family: sans-serif;
+      transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;    
+}
+.table-container { 
+    max-width: 700px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 100px;
+    opacity: 0;
+     transform: translateY(30px);
+     /* waxa uu hoos usocona 30pixel */
+    animation: moveup 0.5s linear forwards;
+    /* move up wa animation no ogolanayo inu box kor aado */
+    /* linear forward wa xawaare jogto ah */
+}
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+   
+    border-radius: 15px;
+    overflow: hidden;
+}
+.students-table thead {
+    background: #2c5530;
+    color: white;
+}
+.students-table th,
+.students-table td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+.students-table th {
+    font-weight: 600;
+    font-size: 1.1rem;
+    /* in upper laga dhigo qoralka  */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.students-table tbody tr {
+    /* colorka yar ee ka so muqanayo mrka mouse ka la dul geeyo */
+    transition: background-color 0.5s ease;
+}
+.students-table tbody tr:hover {
+   /* hover wuxu naga cawina in uu so muqdo color mrka la dul tago */
+    background-color: #9debe0;
+     /* noca colorka sidu noqonayo */
+}
+.students-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.students-table td {
+    font-size: 1rem;
+    color: #333;
+}
+.students-table td:first-child {
+    /* wa midka ugu horeyo color uyeel */
+    font-weight: 600;
+    color: #2c5530;
+}

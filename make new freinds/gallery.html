@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Group</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* wxa lagu xakameya contantska marke buxsaman inu jabiyo */
+  /* kala fogaanta elements ka gudaha */
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 200px;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    /* hover wuxu naga cawinaya sawirada ine kor ubodan marka ladul tago */
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
+   
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="lg.jpg" class="logo" alt="loogii">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="join.html">Join Us</a></li>
+            </ul>
+            <div>
+                <!-- <a href="login.html" class="login-btn">Log in</a> -->
+                <a href="https://apps.apple.com/my/app/camfrog-live-cam-chat-rooms/id694578768" class="btn">Download App</a>
+            </div>
+        </nav>
+    </div>
+        <!-- functions start-->
+  <h1 class="title">Image Gallery</h1>
+  <div class="gallery">
+    <div class="gallery-item"><img src="im7.jpg" alt="image1"></div>
+    <div class="gallery-item"><img src="111.jpg" alt="Image 2"></div>
+    <div class="gallery-item"><img src="2222.jpg" alt="Image 3"></div>
+    <div class="gallery-item"><img src="im5.jpg" alt="Image 4"></div>
+    <div class="gallery-item"><img src="im6.jpg" alt="Image 5"></div>
+    <div class="gallery-item"><img src="uuuu.jpg" alt="Image 6"></div>
+    <div class="gallery-item"><img src="kkk.jpg" alt="Image 7"></div>
+  </div>
+</body>
+</html>
