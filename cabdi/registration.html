@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+<link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+  <header>
+        <h3 class="h3">Registration form</h3>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="registration.html">registration</a></li>
+                <li> <a href="help.html">Help</a></li>
+        </ul>
+     </nav>
+    </header>
+  <br> <br> <br>
+
+  <div class="form-container">
+    
+    <form>
+   
+      
+      <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required placeholder="enter you are first name"/>
+      </div> <br>
+
+      <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required placeholder="enter you are last name"/>
+      </div> <br>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="gender-group">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </div>
+      </div> <br>
+
+      <div class="form-group">
+        <label>Hobbies:</label>
+        <div class="hobbies-group">
+          <label><input type="checkbox" name="hobbies" value="reading" /> Reading</label>
+          <label><input type="checkbox" name="hobbies" value="traveling" /> Traveling</label>
+          <label><input type="checkbox" name="hobbies" value="sports" /> Sports</label>
+        </div>
+      </div><br>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">--Select Course--</option>
+          <option value="web">Web Development</option>
+          <option value="data">networking</option>
+          <option value="ai">multimedia</option>
+        </select>
+      </div>
+
+      <div class="form-group buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    
+    </form>
+  </div>
+  <footer>
+        <p>&copy; 2025 MIT college. All rights reserved.</p>
+    </footer> 
+</body>
+</html>
+
+
